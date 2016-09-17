@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"/>
+<meta charset="UTF-8" />
 <title>Canvas Image Upload</title>
-<script type="text/javascript"  src="" th:src="@{/js/jquery.js}"/>
-<script type="text/javascript">
-jQuery(document).ready(function($){
-	alert("ok");
-});
+<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" />
+<script type="text/javascript" src="" th:src="@{/js/jquery.js}" />
+<script type="text/javascript" src="" th:src="@{/js/upload.js}" />
 
-</script>
 </head>
 <body>
+	<div class="container">
+		<video height="480" width="850" controls="controls" id="video">
+			<source
+				th:src="@{/video/small.mp4}"
+				type="video/mp4"/>
+			Your browser does not support video tag!
+		</video>
+		<button onclick="snap(this);" th:value="@{/upload}" >Snap!</button>
+		<div id="output"></div>
+	</div>
 
 </body>
 </html>

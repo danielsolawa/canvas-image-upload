@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+Body{
+	background-color: #99b9d7;
+}
+
+.container{
+	background-color: #4d85b9;
+	width: 860px;
+	height: 600px;
+	margin : auto;
+}
