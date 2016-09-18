@@ -11,14 +11,11 @@
 <body>
 	<div class="container">
 		<video height="480" width="850" controls="controls" id="video">
-			<source
-				th:src="@{/video/small.mp4}"
-				type="video/mp4"/>
+			<source th:src="@{/video/small.mp4}" type="video/mp4" />
 			Your browser does not support video tag!
 		</video>
-		<button onclick="snap(this);" th:value="@{/upload}" >Snap!</button>
-		<div id="output">hello</div>
+		<button onclick="snap(this);" th:value="@{/upload}">Snap!</button>
 	</div>
-
+	<div class="container" id="output"></div>
 </body>
 </html>
